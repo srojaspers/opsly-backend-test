@@ -39,5 +39,16 @@ Have fun!
 
 ## Implementation details
 
+To implement this exercise I have used SpringBoot and its functionality to easly create HTTP services and to handle asynchronous code exection. These are the changes implemented:
+
+- Change the default port from 8080 to 3000: Just by adding server.port=3000 to application.properties
+- Implement the RestCotroller to handle the requests to "/". Please see SocialMediaController Class
+- Implement a services responsible for retrieving data from Facebook, Instagram and Twitter. Please see the classes within the package com.thepracticaldeveloper.reactiveweb.service
+- Implemented the domain layer to define objects for Picture, Tweet, Status and SocialMedia. Please see classes within the package com.thepracticaldeveloper.reactiveweb.domain
+
+
+## Handling the unpredictability the services using Asynchronous computation and error handling
+
+A
 
 
