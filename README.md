@@ -47,7 +47,7 @@ To implement this exercise I have used SpringBoot and its functionality to easly
 - Implemented the domain layer to define objects for Picture, Tweet, Status and SocialMedia. Please see classes within the package com.thepracticaldeveloper.reactiveweb.domain
 
 
-## Handling the unpredictability of the services using Asynchronous computation and error handling
+## Handling the unpredictability of the social media services using Asynchronous computation and error handling
 
 The services for Twitter, Facebook and Instagram are quite unreliable in terms of performance (response time) and results. They will somtimes respond with an error. 
 
