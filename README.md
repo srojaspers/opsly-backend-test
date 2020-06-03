@@ -49,6 +49,10 @@ To implement this exercise I have used SpringBoot and its functionality to easly
 
 ## Handling the unpredictability the services using Asynchronous computation and error handling
 
-A
+The services for Twitter, Facebook and Instagram are quite unreliable in terms of performance (response time) and results. They will somtimes respond with an error. 
+
+I have used Java's CompletableFuture to perform the calls to the three services asynchronously so that they don't block each other. Then I have used the CompletableFuture features to sync the response from the different calls before unifying everything within a single response in Json Format to be return to the end user. (Please see SocialMediaController.java)
+
+Error handling
 
 
