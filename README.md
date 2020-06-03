@@ -1,11 +1,43 @@
-# Spring Boot Reactive Web
+# Opsly Backend test
 
 ## Running the application
 
 Execute `mvnw spring-boot:run`.
 
-## More details
+Once the application is started access to http://localhost:3000 either using a browser or curl
 
-See [parent README file](../README.md) for more details about this application.
+## Original requirement
 
-See [the blog's guide](https://thepracticaldeveloper.com/full-reactive-stack) for a full step-by-step description of the source code.
+Your mission:
+A client needs to know what is happening on the social networks. All of them. Right now.
+
+The three social networks the client is interested in are:
+
+https://takehome.io/twitter
+
+https://takehome.io/facebook
+
+https://takehome.io/instagram
+
+Because these social networks are so webscale, they don't always respond predictably. The delay in their response almost appears like someone waited for a random integer of seconds before responding!
+
+Also, sometimes they will respond with an error. This error will not be valid JSON. Life's hard sometimes.
+
+The client needs to be able to run your thing, then issue the command:
+
+curl localhost:3000
+And get back a JSON response of the output from the three social networks in the format:
+
+{ twitter: [tweets], facebook: [statuses], instagram: [photos] }
+Order isn't important.
+
+This should be a quick little task, but the client is paying us A Billion dollars for it so make sure your implementation is as robust as it is beautiful.
+
+Don't forget to git push regularly.
+
+Have fun!
+
+## Implementation details
+
+
+
