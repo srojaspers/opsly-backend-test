@@ -53,7 +53,7 @@ The services for Twitter, Facebook and Instagram are quite unreliable in terms o
 
 I have used Java's CompletableFuture to perform the calls to the three services asynchronously so that they don't block each other. Then I have used the CompletableFuture features to sync the response from the different calls before unifying everything within a single response in Json Format to be return to the end user. (Please see SocialMediaController.java)
 
-**Error handling**
+**Error handling:**
 Given the unpredicatibility of the services I have implemented a retry functionality (maxRetries set to 5). This way, if one of the services return an error, it will retry (up to 5 times) until the service returns data. Please FacebookService.java, Instagram.java and Twitter.java
 
 
