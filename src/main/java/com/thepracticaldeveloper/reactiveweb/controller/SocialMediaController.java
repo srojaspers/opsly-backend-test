@@ -45,7 +45,7 @@ public class SocialMediaController {
 
 
 		SocialMedia sm = new SocialMedia();
-
+		//Calling services asynchronouly
 		CompletableFuture<List<Tweet>> tweets = twitterService.retrieveTweets();
 		CompletableFuture<List<Status>> statuses = facebookService.retrieveStatuses();
 		CompletableFuture<List<Picture>> pictures = instagramService.retrievePictures();

@@ -53,6 +53,7 @@ public class FacebookService {
 				"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36");
 		HttpEntity<String> entity = new HttpEntity<String>("parameters", headers);
 
+		//Max number of retry attempts
 		int maxAttempts = 5 ;
 
 		for(int count = 0 ; count < maxAttempts ; count++) {
@@ -65,7 +66,7 @@ public class FacebookService {
 				
 				results = statusResponse.getBody();
 
-				count = maxAttempts; //don't retry
+				count = maxAttempts; //successful response, don't retry
 
 				log.debug("Status Size IS: " + results.size());
 
